@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   def show
     @users = User.all
     @user = User.find(params[:id])
-    #@prototypes = user.prototypes
+    @prototypes = @user.prototypes
   end
 
 end
